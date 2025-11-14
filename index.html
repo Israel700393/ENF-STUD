@@ -4,56 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo Enfermagem - Seu Assistente de Estudos</title>
-    <link rel="stylesheet" href="estudo-enfermagem.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Menu Lateral -->
     <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <div class="logo-sidebar">
-                <i class="fas fa-heartbeat"></i>
+                <span class="icon">💙</span>
                 <span>Estudo Enfermagem</span>
             </div>
             <button class="close-sidebar" id="closeSidebar">
-                <i class="fas fa-times"></i>
+                <span class="icon">✕</span>
             </button>
         </div>
         
         <nav class="sidebar-nav">
             <button class="sidebar-btn active" data-section="dashboard">
-                <i class="fas fa-home"></i>
+                <span class="icon">🏠</span>
                 <span>Início</span>
             </button>
             <button class="sidebar-btn" data-section="flashcards">
-                <i class="fas fa-layer-group"></i>
+                <span class="icon">📚</span>
                 <span>Flashcards</span>
             </button>
             <button class="sidebar-btn" data-section="galeria">
-                <i class="fas fa-images"></i>
+                <span class="icon">🖼️</span>
                 <span>Galeria</span>
             </button>
             <button class="sidebar-btn" data-section="calendario">
-                <i class="fas fa-calendar-alt"></i>
+                <span class="icon">📅</span>
                 <span>Calendário</span>
             </button>
             <button class="sidebar-btn" data-section="ia">
-                <i class="fas fa-robot"></i>
+                <span class="icon">🤖</span>
                 <span>IA Assistente</span>
             </button>
             <button class="sidebar-btn" data-section="timer">
-                <i class="fas fa-clock"></i>
+                <span class="icon">⏰</span>
                 <span>Timer</span>
             </button>
             <button class="sidebar-btn" data-section="anotacoes">
-                <i class="fas fa-sticky-note"></i>
+                <span class="icon">📝</span>
                 <span>Anotações</span>
             </button>
         </nav>
         
         <div class="sidebar-footer">
             <button class="theme-toggle-sidebar" id="themeToggleSidebar">
-                <i class="fas fa-moon"></i>
+                <span class="icon">🌙</span>
                 <span>Modo Escuro</span>
             </button>
         </div>
@@ -66,44 +65,44 @@
     <header class="header">
         <div class="container">
             <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
+                <span class="icon">☰</span>
             </button>
             <div class="logo">
-                <i class="fas fa-heartbeat"></i>
+                <span class="icon">💙</span>
                 <span>Estudo Enfermagem</span>
             </div>
             <nav class="nav nav-desktop">
                 <button class="nav-btn active" data-section="dashboard">
-                    <i class="fas fa-home"></i>
+                    <span class="icon">🏠</span>
                     <span>Início</span>
                 </button>
                 <button class="nav-btn" data-section="flashcards">
-                    <i class="fas fa-layer-group"></i>
+                    <span class="icon">📚</span>
                     <span>Flashcards</span>
                 </button>
                 <button class="nav-btn" data-section="galeria">
-                    <i class="fas fa-images"></i>
+                    <span class="icon">🖼️</span>
                     <span>Galeria</span>
                 </button>
                 <button class="nav-btn" data-section="calendario">
-                    <i class="fas fa-calendar-alt"></i>
+                    <span class="icon">📅</span>
                     <span>Calendário</span>
                 </button>
                 <button class="nav-btn" data-section="ia">
-                    <i class="fas fa-robot"></i>
+                    <span class="icon">🤖</span>
                     <span>IA Assistente</span>
                 </button>
                 <button class="nav-btn" data-section="timer">
-                    <i class="fas fa-clock"></i>
+                    <span class="icon">⏰</span>
                     <span>Timer</span>
                 </button>
                 <button class="nav-btn" data-section="anotacoes">
-                    <i class="fas fa-sticky-note"></i>
+                    <span class="icon">📝</span>
                     <span>Anotações</span>
                 </button>
             </nav>
             <button class="theme-toggle" id="themeToggle">
-                <i class="fas fa-moon"></i>
+                <span class="icon">🌙</span>
             </button>
         </div>
     </header>
@@ -121,28 +120,28 @@
                 
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <i class="fas fa-layer-group"></i>
+                        <span class="icon" style="font-size: 3rem;">📚</span>
                         <div class="stat-info">
                             <h3 id="totalFlashcards">0</h3>
                             <p>Flashcards</p>
                         </div>
                     </div>
                     <div class="stat-card">
-                        <i class="fas fa-images"></i>
+                        <span class="icon" style="font-size: 3rem;">🖼️</span>
                         <div class="stat-info">
                             <h3 id="totalImages">0</h3>
                             <p>Imagens Salvas</p>
                         </div>
                     </div>
                     <div class="stat-card">
-                        <i class="fas fa-calendar-check"></i>
+                        <span class="icon" style="font-size: 3rem;">📅</span>
                         <div class="stat-info">
                             <h3 id="totalEvents">0</h3>
                             <p>Eventos</p>
                         </div>
                     </div>
                     <div class="stat-card">
-                        <i class="fas fa-clock"></i>
+                        <span class="icon" style="font-size: 3rem;">⏰</span>
                         <div class="stat-info">
                             <h3 id="studyTime">0h</h3>
                             <p>Tempo de Estudo</p>
@@ -154,19 +153,19 @@
                     <h2>Ações Rápidas</h2>
                     <div class="action-buttons">
                         <button class="action-btn" onclick="navigateTo('flashcards')">
-                            <i class="fas fa-plus"></i>
+                            <span class="icon">➕</span>
                             Novo Flashcard
                         </button>
                         <button class="action-btn" onclick="navigateTo('galeria')">
-                            <i class="fas fa-upload"></i>
+                            <span class="icon">📤</span>
                             Adicionar Imagem
                         </button>
                         <button class="action-btn" onclick="navigateTo('calendario')">
-                            <i class="fas fa-calendar-plus"></i>
+                            <span class="icon">📆</span>
                             Agendar Prova
                         </button>
                         <button class="action-btn" onclick="navigateTo('ia')">
-                            <i class="fas fa-question-circle"></i>
+                            <span class="icon">❓</span>
                             Tirar Dúvida
                         </button>
                     </div>
@@ -184,10 +183,10 @@
                 
                 <div class="flashcard-controls">
                     <button class="btn-primary" id="addFlashcardBtn">
-                        <i class="fas fa-plus"></i> Criar Flashcard
+                        <span class="icon">➕</span> Criar Flashcard
                     </button>
                     <div class="search-box">
-                        <i class="fas fa-search"></i>
+                        <span class="icon">🔍</span>
                         <input type="text" id="searchFlashcard" placeholder="Buscar flashcards...">
                     </div>
                 </div>
@@ -235,11 +234,11 @@
                 
                 <div class="gallery-controls">
                     <button class="btn-primary" id="addImageBtn">
-                        <i class="fas fa-upload"></i> Adicionar Imagem
+                        <span class="icon">📤</span> Adicionar Imagem
                     </button>
                     <input type="file" id="imageInput" accept="image/*" style="display: none;" multiple>
                     <div class="search-box">
-                        <i class="fas fa-search"></i>
+                        <span class="icon">🔍</span>
                         <input type="text" id="searchImage" placeholder="Buscar imagens...">
                     </div>
                 </div>
@@ -278,12 +277,12 @@
                 
                 <div class="calendar-controls">
                     <button class="btn-primary" id="addEventBtn">
-                        <i class="fas fa-plus"></i> Adicionar Evento
+                        <span class="icon">➕</span> Adicionar Evento
                     </button>
                     <div class="calendar-nav">
-                        <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                        <button id="prevMonth"><span class="icon">◀</span></button>
                         <h2 id="currentMonth"></h2>
-                        <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                        <button id="nextMonth"><span class="icon">▶</span></button>
                     </div>
                 </div>
 
@@ -355,13 +354,13 @@
                         
                         <div class="pomodoro-controls">
                             <button class="btn-primary" id="startPomodoro">
-                                <i class="fas fa-play"></i> Iniciar
+                                <span class="icon">▶</span> Iniciar
                             </button>
                             <button class="btn-secondary" id="pausePomodoro">
-                                <i class="fas fa-pause"></i> Pausar
+                                <span class="icon">⏸</span> Pausar
                             </button>
                             <button class="btn-secondary" id="resetPomodoro">
-                                <i class="fas fa-redo"></i> Resetar
+                                <span class="icon">🔄</span> Resetar
                             </button>
                         </div>
 
@@ -394,16 +393,16 @@
                         
                         <div class="stopwatch-controls">
                             <button class="btn-primary" id="startStopwatch">
-                                <i class="fas fa-play"></i> Iniciar
+                                <span class="icon">▶</span> Iniciar
                             </button>
                             <button class="btn-secondary" id="pauseStopwatch">
-                                <i class="fas fa-pause"></i> Pausar
+                                <span class="icon">⏸</span> Pausar
                             </button>
                             <button class="btn-secondary" id="resetStopwatch">
-                                <i class="fas fa-redo"></i> Resetar
+                                <span class="icon">🔄</span> Resetar
                             </button>
                             <button class="btn-secondary" id="lapStopwatch">
-                                <i class="fas fa-flag"></i> Volta
+                                <span class="icon">🚩</span> Volta
                             </button>
                         </div>
 
@@ -423,10 +422,10 @@
                 
                 <div class="notes-controls">
                     <button class="btn-primary" id="addNoteBtn">
-                        <i class="fas fa-plus"></i> Nova Anotação
+                        <span class="icon">➕</span> Nova Anotação
                     </button>
                     <div class="search-box">
-                        <i class="fas fa-search"></i>
+                        <span class="icon">🔍</span>
                         <input type="text" id="searchNotes" placeholder="Buscar anotações...">
                     </div>
                     <select id="filterNotes" class="filter-select">
@@ -491,7 +490,7 @@
                     <div class="chat-messages" id="chatMessages">
                         <div class="chat-message bot">
                             <div class="message-avatar">
-                                <i class="fas fa-robot"></i>
+                                <span class="icon">🤖</span>
                             </div>
                             <div class="message-content">
                                 <p>💙 Olá! Sou sua assistente de estudos de enfermagem!</p>
@@ -506,7 +505,7 @@
                     <div class="chat-input-container">
                         <textarea id="chatInput" placeholder="Digite sua dúvida..." rows="2"></textarea>
                         <button class="btn-primary" id="sendMessage">
-                            <i class="fas fa-paper-plane"></i>
+                            <span class="icon">📤</span>
                         </button>
                     </div>
                     <div class="quick-questions">
@@ -524,6 +523,6 @@
         </div>
     </main>
 
-    <script src="estudo-enfermagem.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
