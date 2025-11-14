@@ -157,14 +157,14 @@ function updateThemeButtons() {
     const themeToggleSidebar = document.getElementById('themeToggleSidebar');
     
     if (state.theme === 'dark') {
-        if (themeToggle) themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        if (themeToggle) themeToggle.innerHTML = '<span class="icon">☀️</span>';
         if (themeToggleSidebar) {
-            themeToggleSidebar.innerHTML = '<i class="fas fa-sun"></i><span>Modo Claro</span>';
+            themeToggleSidebar.innerHTML = '<span class="icon">☀️</span><span>Modo Claro</span>';
         }
     } else {
-        if (themeToggle) themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        if (themeToggle) themeToggle.innerHTML = '<span class="icon">🌙</span>';
         if (themeToggleSidebar) {
-            themeToggleSidebar.innerHTML = '<i class="fas fa-moon"></i><span>Modo Escuro</span>';
+            themeToggleSidebar.innerHTML = '<span class="icon">🌙</span><span>Modo Escuro</span>';
         }
     }
 }
@@ -1193,7 +1193,7 @@ function addMessageToChat(text, isUser, save = true) {
     
     messageDiv.innerHTML = `
         <div class="message-avatar">
-            <i class="fas fa-${isUser ? 'user' : 'robot'}"></i>
+            <span class="icon">${isUser ? '👤' : '🤖'}</span>
         </div>
         <div class="message-content">
             <p>${formattedText}</p>
